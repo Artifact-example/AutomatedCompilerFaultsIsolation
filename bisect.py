@@ -90,13 +90,6 @@ def installRevision(revision, gccgitcwd):
 
     logging.info(f'install {revision} spend: {time.time() - stime}, seconds')
 
-
-def validate_random():
-    import random
-    res = random.randint(0,1)
-    return res
-
-
 def validate(revision, prog, option, oracle):
     comp_res, run_res, run_val = oracle
     obj_file = 'run.out'
