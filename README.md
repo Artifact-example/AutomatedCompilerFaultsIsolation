@@ -21,7 +21,7 @@ We take the bug-triggering test program `114551.c` as an example to demonstrate 
 1. The Python script in `install-basic-gcc-revisions.py` installs basic gcc branch revisions such as gcc-15.0.0, gcc-14.0.0, gcc-13.0.0, gcc-12.0.0 and gcc-11.0.0 in local machine. 
 
 
-```
+```sh
 python3 install-basic-gcc-revisions.py
 
 ```
@@ -36,7 +36,7 @@ python3 CompilerExplorer-post.py
 3. The Python script in `bisect.py` uses the git bisect to determine the specific commit of the compiler that introduced the corresponding bug. The following command will perform a binary search to identify the corresponding bug-inducing commit for bug [114551](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=114551):
 
 
-```
+```sh
 python3 bisect.py
 
 ```
